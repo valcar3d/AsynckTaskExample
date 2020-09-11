@@ -8,7 +8,7 @@
 
     <Button
 
-        android:id="@+id/asyncTask"
+        android:id="@+id/btnDownload"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Download"
@@ -19,15 +19,30 @@
         app:layout_constraintVertical_bias="0.15" />
 
     <ImageView
-
-        android:layout_marginTop="50dp"
-
         android:id="@+id/image"
-        android:layout_width="300dp"
+        android:layout_width="match_parent"
         android:layout_height="300dp"
+        android:layout_margin="20sp"
+        android:layout_marginTop="50dp"
+        android:contentDescription="Image to be downloaded"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/asyncTask" />
+        app:layout_constraintTop_toBottomOf="@+id/btnDownload"
+        app:layout_constraintVertical_bias="0.173" />
+
+    <TextView
+        android:id="@+id/tvIns"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Click anywhere to cancel"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/btnDownload"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
